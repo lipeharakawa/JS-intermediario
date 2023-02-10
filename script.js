@@ -247,7 +247,6 @@ let total = numeros.reduce((acumulador, numero, indice, original) => {
 console.log("Total do Reduce: " + total);
 
 //Operador Find
-
 let listagem = [5, 3, "José", 2, "Matheus"]
 
 let busca = listagem.find((item) => {
@@ -255,10 +254,8 @@ let busca = listagem.find((item) => {
         return console.log("Item encontrado com sucesso");
     }
 });
-*/
 
 //Operador Filter
-
 let palavras = ["Matheus", "Ana", "José", "Ricardo Silva", "Sujeito Programador"];
 
 let resultado = palavras.filter((item) => {
@@ -266,7 +263,54 @@ let resultado = palavras.filter((item) => {
 })
  console.log(resultado);
 
+//Funções anônimas
+//() => {}
+//1 - Os parênteses, que é por onde a função recebe os argumentos (assim com as funções tradicionais);
+//2 - "seta" => - responsável pelo nome "arrow";
+//3 - É as chaves: o bloco de código que representa o corpo da função.
 
+
+function somar(a, b){
+    let total = a + b;
+    return console.log(total);
+}
+
+somar(10, 30);
+
+let subtrair = (valor1, valor2) => {
+    let total = valor1 - valor2;
+    console.log(total);
+}
+
+subtrair(60, 30);
+
+let numeros = [1, 3, 5 ,10];
+
+numeros.map((item) => {
+    console.log(item);
+});
+
+//Includes
+let nomes = ["Matheus", "Lucas", "José"];
+
+console.log(nomes.includes("Lucas"));
+
+if(nomes.includes("Matheus")){
+    console.log("Está na lista");
+}else{
+    console.log("Não está na lista");
+}
+
+//startsWith
+let nome = "Matheus";
+
+console.log(nome.startsWith("Mat"));
+
+//endsWith
+let cor = "Verde";
+
+console.log(cor.endsWith("rde"));
+*/
 
 
 
