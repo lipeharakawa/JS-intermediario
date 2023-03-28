@@ -89,7 +89,7 @@ if(nome === "Felipe"){
 }
 
 //const - Permite somente acessar os dados dentro do próprio bloco criado e não permite ser alterado em nenhum local, não permite ser criada vazia
-var nome = "Felipe"
+var nome = "Felipe";
 
 if(nome === "Felipe"){
     const curso = "JavaScript";
@@ -147,7 +147,6 @@ let pessoa = {
 console.log(pessoa.nome);
 console.log(pessoa.cargo);
 
-let nome = "Felipe";
 
 const { nome:nomePessoa, cargo } = pessoa;
 

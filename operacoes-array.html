@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Seidi Harakawa">
+    <meta name="description" content="Página web com conceitos básicos de JavaScript.">
+    <link rel="stylesheet" href="./style-2.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>JavaScript Intermediário</title>
+</head>
+<body>
+    <header>
+        <h1>Operações com array</h1>
+    </header>
+    <section class="section">
+        <div class="section_parte_1">
+            <h2>Operações</h2>
+
+            <h3>Operador map</h3>
+            <p>O método map() invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.</p>
+            <p>A função callback é chamada com três argumentos: o valor do elemento corrente, o índice do elemento corrente e o array original que está sendo percorrido.</p>
+            <p>let lista = ["Matheus", "Jose", "Maria"];</p>
+            <p>lista.map((item, index) => { <br>
+            document.write(`Passando: ${item} - Está na posição ${index} `); <br>
+            });</p>
+
+            <h3>Operador reduce</h3>
+            <p>Serve para iterar sobre um array e utilizar o valor de cada item para criar um objeto final com base em alguma regra. Como o próprio nome da função sugere, ela “reduz” os itens de um vetor a um valor único. Por exemplo, podemos utilizá-la para obter a soma ou produto dos itens de um vetor numérico.</p>
+            
+            <p>let numeros = [5, 3, 2 ];</p>
+            <p>let total = numeros.reduce((acumulador, numero, indice, original) => { <br>
+            document.write(`${acumulador} - Total até o momento`); <br>
+            document.write(`${numero} - Valor autal`); <br>
+            document.write(`${indice} - indice atual`); <br>
+            document.write(`${original} - array original`); <br>
+            return acumulador += numero; <br>
+            });</p>
+            <p>document.write("Total do Reduce: " + total);</p>
+
+            <h3>Operador find</h3>
+            <p>O find()método retorna o primeiro elemento na matriz fornecida que satisfaz a função de teste fornecida. Se nenhum valor satisfizer a função de teste, undefinedserá retornado.</p>
+            
+            <p>let listagem = [5, 3, "José", 2, "Matheus"];</p>
+
+            <p>let busca = listagem.find((item) => { <br>
+            if(item === "José"){ <br>
+            return document.write("Item encontrado com sucesso!"); <br>
+            } <br>
+            });</p>
+
+            <h3>Operador filter</h3>
+            <p>O filter()método cria uma cópia superficial de uma parte de uma determinada matriz, filtrada apenas para os elementos da matriz fornecida que passam no teste implementado pela função fornecida.</p>
+            
+            <p>let palavras = ["Matheus", "Ana", "José", "Ricardo Silva", "Sujeito Programador"];</p>
+
+            <p>let resultado = palavras.filter((item) => { <br>
+            return item.length <= 4; <br>
+            }) <br>
+            document.write(resultado);</p> <br>
+
+            <h3>Operador includes</h3>
+            <p>O método includes() determina se um array contém um determinado elemento, retornando true ou false apropriadamente.</p>
+
+            <p>let nomes = ["Matheus", "Lucas", "José"];</p>
+            <p>if(nomes.includes("Matheus")){ <br>
+            document.write("Está na lista"); <br>
+            }else{ <br>
+            document.write("Não está na lista"); <br>
+            }</p>
+            
+            <a href="rest.html">Anterior</a>
+            <a href="index.html">Menu</a>
+            <a href="operacoes-string.html">Próximo</a>
+        </div>
+        <div class="section_parte_2">
+            <img style="max-width: 90%;" src="assets/img/img20.png">
+            <img style="max-width: 90%;" src="assets/img/img21.png">
+            <img style="max-width: 90%;" src="assets/img/img22.png">
+            <img style="max-width: 90%;" src="assets/img/img23.png">
+            <img style="max-width: 90%;" src="assets/img/img24.png">
+        </div>
+    </section>
+</body>
+</html>

@@ -1,36 +1,78 @@
-body {
-    /*Alinha os elementos da página ao centro*/
-    font-family: "Roboto Mono", monospace;
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  background-color: #00375b;
+  text-align: center;
+  padding: 2px;
+}
+
+header h1{
+  color: white;
+  font-family: 'Lora', serif;
+}
+
+.section{
+  padding-bottom: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.section_parte_1{
+  flex: 45%;
+  margin-left: 5%;
+}
+
+.section_parte_1 h2{
+  margin-top: 50px;
+}
+
+.section_parte_2{
+  text-align: center;
+  flex: 45%;
+  margin-right: 5%;
+}
+
+.section_parte_2 img{
+  margin-bottom: 25px;
+}
+
+body a{
+  background: #00375b;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 1000px){
+  header h1{
+    font-size: 25px;
+  }
+  .section{
+    padding-top: 20px;
+  }
+  .section_parte_1{
+    flex: 100%;
+    margin: 5%;
     text-align: center;
-    background-image: url("https://wallpaperaccess.com/full/1773977.jpg");
-    background-color: #000000;
-    /*Fixa o plano de fundo na página preenchendo-o por um todo*/
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-
-h2 {
-    color: #ffffff;
-    margin: 0 0 5px;
-    font-size: 40px;
-}
-
-button {
-    border: 0;
-    color: #ffffff;
-    background: #da1e26;
-    font-weight: bold;
-    padding: 15px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-input {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 15px;
+  }
+  .section_parte_2{
+    flex:100%;
+    margin: 5%;
+    text-align: center;
+  }
 }

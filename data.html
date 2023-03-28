@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Seidi Harakawa">
+    <meta name="description" content="Página web com conceitos básicos de JavaScript.">
+    <link rel="stylesheet" href="./style-2.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>JavaScript Intermediário</title>
+</head>
+<body>
+    <header>
+        <h1>Data e horário</h1>
+    </header>
+    <section class="section">
+        <div class="section_parte_1">
+            <h2>Manipulando datas</h2>
+            <p>O JavaScript possui a classe Date que nos permite trabalhar com datas e horários.</p>
+            <p>var data = new Date();</p>
+
+            <h3>Pegar apenas um elemento específico da data e horário</h3>
+            <p>console.log(data); <br>
+            console.log(data.getDate()); <br>
+            console.log(data.getMonth()); <br>
+            console.log(data.getDay()); <br>
+            console.log(data.getFullYear()); <br>
+            console.log(data.getHours()); <br>
+            console.log(data.getMinutes()); <br>
+            console.log(data.getSeconds()); <br>
+            console.log(data.getMilliseconds());</p>
+
+            <p>Observações: O método getMonth() e getDay() retorna o mês e o dia da semana na data especificada de acordo com o horário local, como um valor zero-based (onde o zero indica o primeiro mês do ano e o primeiro dia da semana).</p>
+
+            <h3>Criar nova data</h3>
+            <p>var dataNova = new Date("february 06, 2023");</p>
+        
+            <h3>Converter data em milissegundos</h3>
+            <p>var dataMilissegundos = Date.parse(data);</p>
+        
+            <h3>Coverter milissegundos em data</h3>
+            <p>var milissegundosData = new Date(1679956515000);</p>
+        
+            <h3>Coverter data inglês para data nacional</h3>
+            <p>var dataNacional = data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getFullYear();</p>
+        
+            <h3>Converter número da semana em dia da semana</h3>
+            <p>var diasSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"]; <br><br>
+            document.write("Dia da semana: " + diasSemana[data.getDay()]);
+            </p>
+
+            <h3>Converter número do mês em mês do ano</h3>
+            <p>var mesesAno = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]; <br><br>
+            document.write("Ano: " + mesesAno[data.getMonth()]);
+            </p>
+
+            <a href="index.html">Menu</a>
+            <a href="temporizadores.html">Próximo</a>
+        </div>
+        <div class="section_parte_2">
+            <img style="max-width: 90%;" src="assets/img/img1.png">
+            <img style="max-width: 90%;" src="assets/img/img2.png">
+            <img style="max-width: 90%;" src="assets/img/img3.png">
+        </div>
+    </section>
+</body>
+</html>

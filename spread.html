@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Seidi Harakawa">
+    <meta name="description" content="Página web com conceitos básicos de JavaScript.">
+    <link rel="stylesheet" href="./style-2.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>JavaScript Intermediário</title>
+</head>
+<body>
+    <header>
+        <h1>Spread Operator</h1>
+    </header>
+    <section class="section">
+        <div class="section_parte_1">
+            <h2>Definição</h2>
+            <p>Permite expandir uma expressão em um local que receba múltiplos argumentos ou elementos.</p>
+
+            <h3>Exemplo 1</h3>
+            <p>let primeiros = [1 , 2, 3]; <br>
+            let numeros = [...primeiros, 4, 5, 6];</p>
+
+            <p>document.write(numeros);</p>
+
+            <h3>Exemplo 2</h3>
+
+            <p>let pessoa = { <br>
+            nome:  "Matheus", <br>
+            idade: 45, <br>
+            cargo: "RH" <br>
+            };</p>
+            <p>let novaPessoa = { <br>
+            ...pessoa, <br>
+            status: "Ativo", <br>
+            cidade: "Campo Grande / MS", <br>
+            telefone: "(18)9029-14924" <br>
+            };</p>
+
+            <p>document.write(novaPessoa);</p>
+
+            <h3>Exemplo 3</h3>
+
+            <p>function novoUsuario(info) { <br>
+            let dados = { <br>
+            ...info, <br>
+            status: "Ativo", <br>
+            inicio: "20/03/2023", <br>
+            codigo: "123123" <br>
+            }; <br>
+            document.write(dados); <br>
+            } <br>
+            novoUsuario({ nome: "Jose", sobrenome: "Silva", cargo: "DEV" });</p>
+
+            <a href="desestruturar-array.html">Anterior</a>
+            <a href="index.html">Menu</a>
+            <a href="rest.html">Próximo</a>
+        </div>
+        <div class="section_parte_2">
+            <img style="max-width: 90%;" src="assets/img/img15.png">
+            <img style="max-width: 90%;" src="assets/img/img16.png">
+            <img style="max-width: 90%;" src="assets/img/img17.png">
+        </div>
+    </section>
+</body>
+</html>

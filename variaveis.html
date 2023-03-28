@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Seidi Harakawa">
+    <meta name="description" content="Página web com conceitos básicos de JavaScript.">
+    <link rel="stylesheet" href="./style-2.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>JavaScript Intermediário</title>
+</head>
+<body>
+    <header>
+        <h1>Declaração de variáveis</h1>
+    </header>
+    <section class="section">
+        <div class="section_parte_1">
+            <h2>Definição</h2>
+            
+            <h3>var</h3>
+            <p>Permite alterar os dados ou acessar em qualquer bloco, permite ser criada vazia.</p>
+            <p>var texto = "Oi"; <br>
+            var num = 2;</p>
+            <p>if(num > 1 ){ <br>
+            var texto = "Oi, tudo bem ?" <br>
+            }</p>
+            <p>document.write(texto);</p>
+
+            <h3>let</h3>
+            <p>Permite somente alterar os dados ou acessar dentro do próprio bloco criado, permite ser criada vazia.</p>
+            <p>let texto = "Oi"; <br>
+            let num = 2;</p>
+            <p>if(num > 1 ){ <br>
+            let texto = "Oi, tudo bem ?" <br>
+            document.write(texto); <br>
+            }</p>
+
+            <h3>const</h3>
+            <p>Permite somente acessar os dados dentro do próprio bloco criado e não permite ser alterado em nenhum local, não permite ser criada vazia.</p>
+            <p>const cores = { <br>
+            vermelho: "vermelho", <br>
+            verde: "verde", <br>
+            };</p>
+            <p>document.write(cores.vermelho);</p>
+            <p>cores.vermelho = "vermelho escuro";</p>
+            <p>document.write(cores.vermelho);</p>
+
+            <h3>Referência Bibliográfica</h3>
+            <p>JESUS, Gabriel. Qual a diferença entre var, let e const no JavaScript? Linkedin, 2021. Disponível em: https://pt.linkedin.com/pulse/qual-diferen%C3%A7a-entre-var-let-e-const-javascript-gabriel-de-jesus. Acesso em: 28 de mar. de 2023. </p>
+
+            <a href="funcao-anonima.html">Anterior</a>
+            <a href="index.html">Menu</a>
+            <a href="objetos.html">Próximo</a>
+        </div>
+        <div class="section_parte_2">
+            <img style="max-width: 90%;" src="assets/img/img7.png">
+            <img style="max-width: 90%;" src="assets/img/img8.png">
+            <img style="max-width: 90%;" src="assets/img/img9.png">
+        </div>
+    </section>
+</body>
+</html>

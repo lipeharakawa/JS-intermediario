@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Seidi Harakawa">
+    <meta name="description" content="Página web com conceitos básicos de JavaScript.">
+    <link rel="stylesheet" href="./style-2.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>JavaScript Intermediário</title>
+</head>
+<body>
+    <header>
+        <h1>Rest Operator</h1>
+    </header>
+    <section class="section">
+        <div class="section_parte_1">
+            <h2>Definição</h2>
+            <p>Permite representar um número indefinido de argumentos na forma de um Array.</p>
+
+            <h3>Exemplo 1</h3>
+            <p>function convidados(...nomes){ <br>
+            document.write(nomes); <br>
+            } <br>
+            convidados("Matheus", "Lucas", "Maria");</p>
+
+            <h3>Exemplo 2</h3>
+            <p>function sorteador(...numeros){ <br>
+            const numeroGerado = Math.floor(Math.random() * numeros.length); <br>
+            document.write("Número gerado foi: " + numeros[numeroGerado]); <br>
+            } <br>
+            sorteador(1, 4, 5, 15, 25, 90, 55, 34);</p>
+
+            <a href="spread.html">Anterior</a>
+            <a href="index.html">Menu</a>
+            <a href="operacoes-array.html">Próximo</a>
+        </div>
+        <div class="section_parte_2">
+            <img style="max-width: 90%;" src="assets/img/img18.png">
+            <img style="max-width: 90%;" src="assets/img/img19.png">
+        </div>
+    </section>
+</body>
+</html>
