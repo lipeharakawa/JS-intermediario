@@ -27,7 +27,6 @@ header h1{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
 }
   
 .section_parte_1{
@@ -48,6 +47,14 @@ header h1{
 
 .section_parte_2 img{
     border-radius: 30px;
+}
+
+.referencia a{
+    background-color: white;
+    color: red;
+    border-radius: 0px;
+    padding: 0px;
+    margin-left: 0px;
 }
 
 body a{
